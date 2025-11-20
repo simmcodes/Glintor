@@ -1,0 +1,221 @@
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-cover {
+  height: 64px;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+
+.profile-info {
+  position: relative;
+  padding: 0 24px 24px 24px;
+}
+
+.edit-card-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  z-index: 10;
+}
+
+.edit-card-btn:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.edit-card-btn .edit-icon {
+  width: 18px;
+  height: 18px;
+  color: #666;
+}
+
+.profile-avatar-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-bottom: 16px;
+}
+
+.profile-avatar-large {
+  width: 64px;
+  height: 64px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  border: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #666;
+}
+
+.avatar-initials {
+  text-transform: uppercase;
+}
+
+.file-input-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.profile-details {
+  padding-top: 0;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-headline {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.profile-summary {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.profile-location {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.location-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.edit-form {
+  margin-top: 16px;
+}
+
+.edit-form .form-field {
+  margin-bottom: 16px;
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.inline-edit-input,
+.inline-edit-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #0a66c2;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.inline-edit-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.inline-edit-input:focus,
+.inline-edit-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2);
+}
+
+.upload-pic-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-height: 44px;
+}
+
+.upload-pic-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.inline-edit-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.btn-save-inline,
+.btn-cancel-inline {
+  padding: 8px 20px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-height: 36px;
+}
+
+.btn-save-inline {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  flex: 1;
+}
+
+.btn-save-inline:hover {
+  background-color: #004182;
+}
+
+.btn-cancel-inline {
+  background-color: white;
+  color: #666;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.btn-cancel-inline:hover {
+  background-color: #f9f9f9;
+}

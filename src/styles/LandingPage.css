@@ -1,0 +1,69 @@
+/* components/LandingPage.css */
+.landing-page {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 300;
+  color: #8b4513;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-placeholder {
+  width: 100%;
+  height: 384px;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-icon {
+  width: 128px;
+  height: 128px;
+  color: #0a66c2;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-image {
+    display: none;
+  }
+}

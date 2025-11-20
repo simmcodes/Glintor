@@ -1,0 +1,106 @@
+.profile-header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.profile-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  width: 16px;
+  height: 16px;
+}
+
+.search-input {
+  padding: 8px 16px 8px 40px;
+  background-color: #f3f2ef;
+  border: none;
+  border-radius: 8px;
+  width: 256px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.2);
+}
+
+
+.header-nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+  min-width: 60px;
+  min-height: 52px;
+}
+
+.nav-icon-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.nav-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.profile-avatar-small {
+  width: 24px;
+  height: 24px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-initials-small {
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
